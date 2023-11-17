@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Aqui você coloca uma descrição sobre a página..."/>
+    <meta name="keywords" content="palavra chave para o site de pesquisa te encontrar"/>
+    <title>FlexBox aprendendo</title>
+
+    <style> /* CSS INTERNO SÓ PARA APRENDER. DEPOIS FAREMOS EXTERNO */
+        .wrapper {
+        
+            margin: auto; /* centralizar */
+            display: flex; /* para transformar em blocos */
+            flex-direction: row;
+            flex-wrap: wrap; /* quando ultilizamos blocos eles ficam um do lado do outro mesmo que não tenha tamanho total da tela, então para resolver isso ultilizamos flex-wrap: wrap */
+            justify-content: center; /* alinhando os blocos na horizontal dentro do principal */
+            align-items: center; /* alinhando os blocos na vertical */
+            width: 90%; /* Largura do Principal */
+            height: auto;
+            background-color: red;
+            padding: 0%; /* espaçamento entre as caixas e o principal */
+        }
+
+        .box1 {
+            background-color: yellow;
+            width: 30%;
+            height: 200px;
+            border-radius: 5px;
+            margin: 2px; 
+            padding: 10px;
+        }
+
+    /* chamando a caixa maior aqui */
+
+        .box2 {
+            background-color: blue;
+            width: 100%;
+            height: auto;
+            margin: 2px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, maiores nulla ad quas molestias deserunt esse obcaecati eos accusantium, numquam tenetur aut harum libero delectus? Laborum quae iusto possimus alias.
+        </div>
+
+        <div class="box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi expedita pariatur quas mollitia consectetur veniam unde voluptatum quidem deleniti debitis ducimus, harum, ea esse laudantium aut. Velit, cupiditate fugit.
+        </div>
+
+        <div class="box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptate quibusdam eaque a illo necessitatibus quo, qui eum nulla voluptatum animi, culpa itaque voluptates amet nobis obcaecati dolorum asperiores reiciendis.
+        </div>
+
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vero, assumenda cum perspiciatis ea eius ipsam et officia exercitationem quidem reprehenderit reiciendis velit non tempore aliquam pariatur necessitatibus earum tenetur.
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>

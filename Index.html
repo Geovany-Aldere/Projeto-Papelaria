@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Aqui você coloca uma descrição sobre a página..."/>
+    <meta name="keywords" content="palavra chave para o site de pesquisa te encontrar"/>
+    <title>FlexBox aprendendo</title>
+
+    <style> /* CSS INTERNO SÓ PARA APRENDER. DEPOIS FAREMOS EXTERNO */
+        .wrapper {
+        
+            margin: auto; /* centralizar */
+            display: flex; /* para transformar em blocos */
+            flex-direction: row;
+            flex-wrap: wrap; /* quando ultilizamos blocos eles ficam um do lado do outro mesmo que não tenha tamanho total da tela, então para resolver isso ultilizamos flex-wrap: wrap */
+            justify-content: center; /* alinhando os blocos na horizontal dentro do principal */
+            align-items: center; /* alinhando os blocos na vertical */
+            width: 90%; /* Largura do Principal */
+            height: auto;
+            background-color: #05345c;
+            padding: 0%; /* espaçamento entre as caixas e o principal */
+        }
+
+        .box1 {
+            background-color: yellow;
+            width: 30%;
+            height: 200px;
+            border-radius: 5px;
+            margin: 2px; 
+            padding: 10px;
+        }
+
+    /* chamando a caixa maior aqui */
+
+        .box2 {
+            background-color: ;
+            width: 100%;
+            height: auto;
+            margin: 2px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="boxCabeçalho">
+            <div id="LOGO">
+                <img src="./IMG/LOGO.png" title="Logo empresa" alt="logo" class="TAMANHOLOGO">
+            </div>
+            <ul>
+                <li> <a href="Index.html"> Home </a> </li>
+                <li> <a href="Escolar.html"> Escolar </a> </li>
+                <li> <a href="Informatica.HTML"> Informática </a> </li>
+                <li> <a href="FaleConosco.HTML"> FaleConosco </a> </li>
+            </ul>
+        </div>
+
+        <div class="boxBanner">
+            <img src="IMG/BANNER 2.png" title="banner PACOTE OFFICE " alt="banner" >
+        </div>
+
+        <div class="boxMaisProcurados">
+            Mais procurados
+        </div>
+
+        <div class="BoxTabelas">
+            <table id="TABELAS">
+                <tr>
+                    <td><img src="./IMG/Caderno.png" alt="imagem" id="IMAGEM"></td>
+                    <td><img src="./IMG/Agenda.png" alt="imagem" id="IMAGEM"></td>
+                    <td><img src="./IMG/Mochila.png" alt="imagem" id="IMAGEM"></td>
+                    <td><img src="./IMG/Caneta.png" alt="imagem" id="IMAGEM"></td>
+                </tr>
+        
+                <tr>
+                    <th>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium illum consectetur voluptatibus quidem cum nostrum tempora. Aliquid nisi excepturi similique veritatis soluta sit officiis, animi minus dolores facere accusamus odio.</th>
+
+                    <th>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem saepe aspernatur repellendus sapiente officia at corporis, doloremque explicabo? Ad a laboriosam ab praesentium neque tempore qui rerum voluptatibus iure.</th>
+
+                    <th>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum doloremque maiores omnis hic, ducimus, blanditiis ratione tempore suscipit consequatur repudiandae quos labore veniam beatae distinctio culpa quis repellendus quia. Delectus.</th>
+
+                    <th>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut dolor beatae maxime iure qui, optio quasi nam asperiores reprehenderit repudiandae voluptatibus, corporis, laboriosam autem quos quis tempora tempore in nemo.</th>
+                </tr>
+        </div>
+
+        <div class="BoxFreteGratis">
+            <img src="IMG/Frete.png" title="banner frete gratis " alt="banner" >
+        </div>
+
+        <div class="BoxSigaNos">
+            <table id="TABELAS">
+                <tr>
+                    <th>Produtos</th>
+
+                    <th>Home</th>
+
+                    <th>Entrega</th>
+
+                    <th>Contato</th>
+
+                    <th>Quem Somos</th>
+
+                    <th>Trabalhe conosco</th>
+                </tr>
+
+                <div class="BoxSigaNos">
+                    <table id="TABELAS">
+                        <tr>
+                            <th>Produtos</th>
+        
+                            <th>Home</th>
+            </table>
+        </div>
+
+        <div class="BoxRodapé">
+            Todos os direitos autorais reservados - 2023
+        </div>
+    </div>
+
+</body>
+</html>
